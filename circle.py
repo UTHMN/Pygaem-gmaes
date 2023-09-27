@@ -16,18 +16,20 @@ def countUp():
         while True:
             time.sleep(1)
             num += 1
+            print(f"seconds: {num}")
             
     if mode == "mins":
         while True:
             time.sleep(60)
             num += 1
-
+            print(f"minutes: {num}")
+    
     if mode == "hrs":
         while True:
             time.sleep(3600)
             num += 1
+            print(f"hours: {num}")
     
-    print(num + mode)
 
-mode = "mins"
+mode = "secs"
 countUp()
