@@ -20,6 +20,7 @@ turtle.penup()
 turtle.goto(0, 400)
 turtle.write(clicks)
 
+
 def clicked(x, y):
     global clicks
     clicks += 1
@@ -28,6 +29,7 @@ def clicked(x, y):
     turtle.color("white")
     turtle.write(clicks)
     turtle.hideturtle()
+
 
 cookie.onclick(clicked)
 
